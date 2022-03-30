@@ -21,7 +21,8 @@ export default {
             // router.push(`/user/${username}`)
             // this.$router.push(`/airport/${this.airport}`);
             // this.$router.push(`/airport/${this.airport}`);
-            this.$router.push({name: 'airport', params: { code: 'SEA'}});
+            if(this.airport.length)
+              this.$router.push({name: 'AirportDetail', params: { code: this.airport}});
         }
     },
 }

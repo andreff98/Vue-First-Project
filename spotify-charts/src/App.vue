@@ -6,13 +6,13 @@ import SearchAirport from "@/components/SearchAirport.vue";
 
 <template>
   <header>
-    <img
+    <RouterLink to="/" class="header-logo"><img
       alt="Vue logo"
       class="logo"
       src="@/assets/logo.svg"
       width="125"
       height="125"
-    />
+    /></RouterLink>
 
     <div class="wrapper">
       <HelloWorld msg="André Ferreira" descricao="Quando tenho algo importante a dizer calo-me e privo a humanidade de se tornar melhor" idade="23"/>
@@ -26,7 +26,7 @@ import SearchAirport from "@/components/SearchAirport.vue";
       </nav>
     </div>
   </header>
-
+  
   <RouterView />
 </template>
 
@@ -61,6 +61,9 @@ a,
 @media (hover: hover) {
   a:hover {
     background-color: hsla(160, 100%, 37%, 0.2);
+  }
+  .header-logo:hover {
+    background-color: unset;
   }
 }
 

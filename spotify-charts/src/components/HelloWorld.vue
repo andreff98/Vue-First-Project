@@ -4,7 +4,7 @@ defineProps({
     type: String,
     required: true,
   },
-  idade: Number,
+  idade: String,
   descricao: String,
 });
 </script>
